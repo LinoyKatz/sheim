@@ -1,0 +1,19 @@
+.userP h1 {
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.userP button {
+  background-color: black;
+  border-radius: 15%;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.userP p {
+  margin-top: 5rem;
+  font-size: 1.3rem;
+}

@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useReducer } from "react";
 import orderReducer from "../../store/reducers";
 
+import "./orderPage.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Msg from "../../Components/Msg";
 import { Store } from "../../store/store";
@@ -130,5 +131,4 @@ const OrderPage = () => {
     </div>
   );
 };
-
 export default OrderPage;

@@ -1,0 +1,16 @@
+.order-details {
+  /* display: flex; */
+  /* gap: 3rem; */
+  font-size: 1rem;
+}
+
+.order-details h1 {
+  margin-bottom: 7rem;
+}
+
+.order-details p {
+  font-size: 0.9rem;
+}
+.flex {
+  display: flex;
+}

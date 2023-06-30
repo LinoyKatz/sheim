@@ -3,6 +3,7 @@ import { Store } from "../../store/store";
 import { useNavigate } from "react-router-dom";
 import UserOrderList from "../../Components/UserOrderList/UserOrderList";
 
+import "./userProfile.css";
 const UserProfilePage = () => {
   const navigate = useNavigate();
 
@@ -19,13 +20,15 @@ const UserProfilePage = () => {
   };
 
   return (
-    <div>
+    <div className="userP">
       <h1>user Profile</h1>
       <button onClick={signOutHandler}>sign out</button>
       <br />
-      <h2>update user</h2>
-      <h2>fav list</h2>
-      <UserOrderList userInfo={userInfo} />
+      <button>update user</button>
+      <button>fav list</button>
+      <p>
+        <UserOrderList userInfo={userInfo} />
+      </p>
     </div>
   );
 };

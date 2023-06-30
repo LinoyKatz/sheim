@@ -61,9 +61,7 @@ const Header = () => {
             ))}
           </ul>
         </div>
-        <button className="nav-burger">
-          <IoMenu />
-        </button>
+        {/* <button className="nav-burger">menu</button> */}
         {/* <div className="nav-burger">
           <IoMenu />
         </div> */}
