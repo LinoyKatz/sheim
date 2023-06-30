@@ -1,0 +1,46 @@
+.objectInfo-section {
+  margin: 10vh auto 150px;
+  /* width: 50vw;
+  height: 50vh; */
+  background-color: rgb(239, 237, 237);
+  border-radius: 5%;
+  padding: 5rem;
+}
+
+.info {
+  /* height: 20vh; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  gap: 1rem;
+  /* width: 30vw; */
+  margin: 0 auto;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.info p {
+  font-size: 1.5rem;
+}
+
+.info img {
+  width: 30%;
+  height: 30%;
+  border-radius: 7%;
+  transition: 0.3s;
+}
+.info img:hover {
+  transform: scale(1.1);
+}
+
+.obj-info-bottom-section {
+  margin-top: 2rem;
+}
+
+.back-btn {
+  background-color: black;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 2rem;
+}

@@ -1,0 +1,76 @@
+.cart-page {
+  /* background-color: red; */
+  max-width: 100%;
+}
+
+.shop-cart-h5 {
+  width: 30vw;
+  margin: 2rem auto 2rem;
+  /* background-color: rgb(239, 237, 237);
+  border-radius: 5%; */
+  font-size: 1.5rem;
+}
+
+.shopCart-section {
+  min-height: 70vh;
+  background-color: rgb(239, 237, 237);
+  border-radius: 7%;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopCart-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shopCart-item {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.qty-num {
+  background-color: white;
+  width: 4rem;
+}
+.shopCart-item button {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.shopCart-item p {
+  font-size: 1.5rem;
+}
+.total-price {
+  margin-top: 1rem;
+}
+
+.cart-item-img {
+  width: 20vw;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 7%;
+  transition: 0.3s;
+}
+.cart-item-img:hover {
+  transform: scale(1.1);
+}
+
+.Pay-btn {
+  background-color: black;
+  border-radius: 15%;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 2rem;
+}
+
+.Pay-btn:hover {
+  box-shadow: 2px 2px 20px 1px black;
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.address-section {
+  background-color: rgb(239, 237, 237);
+  border-radius: 10%;
+  width: 65vw;
+  /* min-height: 70vh; */
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.address-form {
+  width: 40%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.address-form label {
+  font-size: 1.5rem;
+  margin-top: 1%;
+  margin-bottom: 0.5rem;
+}
+
+.address-form input {
+  font-size: 1.3rem;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+
+.address-form button {
+  background-color: black;
+  border-radius: 15%;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 2rem;
+}
+
+.address-form button:hover {
+  box-shadow: 2px 2px 20px 1px black;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.space-div {
+  width: 100vw;
+  height: 15vh;
+  /* background-color: red; */
+}
+@media (max-width: 950px) {
+  .space-div {
+    width: 100vw;
+    height: 4vh;
+  }
+}

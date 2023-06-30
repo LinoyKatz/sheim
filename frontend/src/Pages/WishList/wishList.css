@@ -1,0 +1,38 @@
+.wish-list-h5 {
+  width: 30vw;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  background-color: rgb(239, 237, 237);
+  border-radius: 10%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.wishList-section {
+  margin: 0 auto;
+  width: 50vw;
+  margin-top: 30vh;
+  background-color: rgb(239, 237, 237);
+  border-radius: 5%;
+  padding: 3rem;
+}
+
+.wish-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2 rem;
+}
+
+.wishList-item {
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 5%;
+  height: 35vh;
+  width: 40vw;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+}

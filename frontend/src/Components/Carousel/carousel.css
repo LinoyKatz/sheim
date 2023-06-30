@@ -1,0 +1,57 @@
+.caroosela {
+  width: 100vw;
+  /* background-color: aqua; */
+  /* height: 30vh; */
+  overflow: hidden;
+}
+
+@media (max-width: 750px) {
+  .caroosela {
+    display: none;
+  }
+}
+
+img {
+  width: 100vw;
+  object-fit: center;
+  /* object-position: top top; */
+  overflow: hidden;
+  height: 100%;
+}
+
+/* @media (max-width: 750px) {
+  .head-carousel {
+    display: none;
+  }
+  .head-carousel3 {
+    display: none;
+  }
+  p {
+    display: none;
+  }
+  .p-carousel3 {
+    display: none;
+  }
+} */
+
+.head-carousel,
+p {
+  color: black;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.head-carousel3 {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+.p-carousel3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}

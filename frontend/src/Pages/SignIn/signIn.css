@@ -1,0 +1,38 @@
+.login-section {
+  margin: 0 auto;
+  margin-top: 20vh;
+  width: 50vw;
+  background-color: rgb(239, 237, 237);
+  border-radius: 7%;
+  padding: 3rem;
+}
+
+.login-h2 {
+  margin-bottom: 2rem;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.login-section form input {
+  width: 20vw;
+  margin: 0 auto;
+}
+
+.signIn-button {
+  background-color: black;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 10%;
+}
+
+.signIn-button:hover {
+  box-shadow: 2px 2px 20px 1px black;
+  cursor: pointer;
+}

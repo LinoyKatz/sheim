@@ -1,0 +1,23 @@
+.hero-div {
+  max-width: 80vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 7vh;
+  margin-bottom: 10vh;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 5vh;
+}
+
+@media (max-width: 950px) {
+  .hero-div {
+    width: 100vw;
+  }
+}
+
+img {
+  /* height: 75vh; */
+  margin: 0 auto;
+  object-fit: contain;
+}

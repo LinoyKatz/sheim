@@ -1,0 +1,54 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.checkout-steps {
+  display: flex;
+  width: 100%;
+}
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+  flex: 1;
+  text-align: center;
+  margin: 0 1px;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid hotpink;
+  color: hotpink;
+}
