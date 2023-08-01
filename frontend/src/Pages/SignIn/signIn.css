@@ -1,10 +1,31 @@
 .login-section {
   margin: 0 auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 50vw;
   background-color: rgb(239, 237, 237);
-  border-radius: 7%;
+  border-radius: 20px;
   padding: 3rem;
+}
+@media (max-width: 900px) {
+  .login-section {
+    min-width: 90vw;
+    margin-top: 2rem;
+  }
+  .login-section form input {
+    min-width: 50vw;
+  }
+  .signIn-button {
+    min-width: 30vw;
+  }
+}
+
+.new-cstmr-p {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.new-cstmr-p span {
+  font-weight: bold;
 }
 
 .login-h2 {
@@ -21,18 +42,36 @@
 .login-section form input {
   width: 20vw;
   margin: 0 auto;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
 
 .signIn-button {
   background-color: black;
+  width: 10vw;
+  margin: 0 auto;
   padding: 0.5rem;
   font-weight: bold;
   color: white;
   margin-top: 2rem;
-  border-radius: 10%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .signIn-button:hover {
   box-shadow: 2px 2px 20px 1px black;
   cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }

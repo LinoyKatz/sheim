@@ -1,16 +1,17 @@
 .header-div {
-  background-color: rgb(239, 237, 237);
+  background-color: rgb(142, 140, 140);
+  margin-bottom: 5rem;
   max-width: 100vw;
+  display: block;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  height: 15vh;
+  height: 20vh;
   z-index: 2;
   overflow: hidden;
   padding-left: 3rem;
-  /* margin: 0 auto; */
 }
 
 .head-sec {
@@ -20,36 +21,35 @@
   padding-right: 5vw;
   padding-left: 5vw;
   padding-top: 2rem;
-  /* max-height: 10vh; */
   width: 100vw;
 }
 
 @media (max-width: 750px) {
+  .header-div {
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .head-sec {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* padding: 1rem; */
+    padding: 1rem;
   }
 }
 
 @media (max-width: 750px) {
-  .logo-head {
-    /* font-size: 0.5rem; */
-    display: none;
-  }
-}
-
-/* @media (max-width: 750px) {
   .left-head {
     display: none;
   }
-} */
-/* @media (max-width: 750px) {
+}
+@media (max-width: 750px) {
   .right-head {
     display: none;
   }
-} */
+}
 
 ul {
   display: flex;
@@ -61,32 +61,30 @@ ul {
 }
 
 .logo-head {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin: 10px;
   align-items: center;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   margin-top: -1rem;
 }
 
 @media (max-width: 750px) {
   .logo-head {
-    margin-left: 1rem;
-    margin-top: 0.7rem;
+    text-align: right;
   }
 }
-/* 
-.nav-burger {
+
+.burger-div {
   display: none;
 }
 
-@media (max-width: 750) {
-  .nav-burger {
+@media (max-width: 750px) {
+  .burger-div {
     display: block;
-    width: 20vw;
-    font-size: 2rem;
   }
-} */
+}
+
 .search-bar {
   display: flex;
   width: 100vw;
@@ -118,7 +116,7 @@ ul {
   }
 } */
 
-.login-list {
+/* .login-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -129,15 +127,46 @@ ul {
   z-index: 30;
   width: 5vw;
   display: none;
+} */
+
+.head-sec li {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.head-sec li:hover {
+  border-bottom: solid grey;
+}
+.head-sec a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.head-sec a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.head-sec a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .right-list li {
   cursor: pointer;
+  font-size: 1.7rem;
 }
 .right-list a {
-  text-decoration: none;
+  text-decoration: inherit;
 }
 .right-list a:hover {
   border-bottom: solid grey;
   color: inherit;
+}
+a {
+  text-decoration: inherit;
+}
+
+.left-list li {
+  cursor: pointer;
+  font-size: 1.7rem;
 }

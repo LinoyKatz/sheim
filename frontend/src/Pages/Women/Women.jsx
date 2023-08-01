@@ -13,17 +13,17 @@ const Women = () => {
   // let mybutton = document.getElementById("myBtn");
 
   // // When the user scrolls down 20px from the top of the document, show the button
-  const backToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  // const backToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
   // // When the user clicks on the button, scroll to the top of the document
-  // function topFunction() {
-  //   document.body.scrollTop = 0; // For Safari
-  //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  // function topFunction()
+  // document.body.scrollTop = 0; // For Safari
+  // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   // }
   return (
     <div>
@@ -31,11 +31,11 @@ const Women = () => {
       <div className="hero-div">
         <IndividualIntervalsExample />
       </div>
-      <ProductsHeadline />
+      {/* <ProductsHeadline /> */}
       <Objects />
-      <button onclick="topFunction()" id="myBtn" title="Go to top">
+      {/* <button onClick="topFunction()" id="myBtn" title="Go to top">
         Top
-      </button>
+      </button> */}
     </div>
   );
 };

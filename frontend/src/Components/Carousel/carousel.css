@@ -1,7 +1,5 @@
 .caroosela {
   width: 100vw;
-  /* background-color: aqua; */
-  /* height: 30vh; */
   overflow: hidden;
 }
 
@@ -14,25 +12,9 @@
 img {
   width: 100vw;
   object-fit: center;
-  /* object-position: top top; */
   overflow: hidden;
   height: 100%;
 }
-
-/* @media (max-width: 750px) {
-  .head-carousel {
-    display: none;
-  }
-  .head-carousel3 {
-    display: none;
-  }
-  p {
-    display: none;
-  }
-  .p-carousel3 {
-    display: none;
-  }
-} */
 
 .head-carousel,
 p {

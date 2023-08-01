@@ -1,6 +1,51 @@
 import bcrypt from "bcryptjs";
 
+// import { GiLargeDress } from "react-icons/gi";
+// import { PiShirtFoldedFill } from "react-icons/pi";
+// import { FaShirt } from "react-icons/fa";
+// import { IoHelpCircle } from "react-icons/io5";
+// import { IoHeartOutline } from "react-icons/io5";
+// import { IoBagOutline } from "react-icons/io5";
+// import { BiUserCircle } from "react-icons/bi";
 const data = {
+  // sideNav: [
+  //   {
+  //     title: "Women",
+  //     icon: <GiLargeDress />,
+  //     link: "/women",
+  //   },
+  //   {
+  //     title: "Men",
+  //     icon: <PiShirtFoldedFill />,
+  //     link: "/women",
+  //   },
+  //   {
+  //     title: "Kids",
+  //     icon: <FaShirt />,
+  //     link: "/women",
+  //   },
+  //   {
+  //     title: "Help",
+  //     icon: <IoHelpCircle />,
+  //     link: "/women",
+  //   },
+  //   {
+  //     title: "Wish-List",
+  //     icon: <IoHeartOutline />,
+  //     link: "/wishList",
+  //   },
+  //   {
+  //     title: "Shop-cart",
+  //     icon: <IoBagOutline />,
+  //     link: "/shopCart",
+  //   },
+  //   {
+  //     title: "My-profile",
+  //     icon: <BiUserCircle />,
+  //     link: "/profile",
+  //   },
+  // ],
+
   users: [
     {
       name: "Linoy Katz",

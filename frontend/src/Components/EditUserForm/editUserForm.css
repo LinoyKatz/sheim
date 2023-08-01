@@ -1,0 +1,21 @@
+.edit-user-form {
+  width: 50vw;
+  margin: 0 auto;
+  background-color: gray;
+  border-radius: 20px;
+  padding-top: 3rem;
+  margin-top: 2rem;
+}
+
+.edit-user-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.edit-user-form form input {
+  margin: 0 auto;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}

@@ -133,9 +133,12 @@ const SignUp = () => {
           Sign up!
         </button>
       </form>
-      <p>
-        Already have an account?
-        <Link to={`/login?redirect=${redirect}`}>LOGIN</Link>
+      <p className="alrdy-have-accnt-p">
+        Already have an account? <br />
+        <Link to={`/signin?redirect=${redirect}`}>
+          {" "}
+          <span>LOGIN</span>
+        </Link>
       </p>
     </section>
   );

@@ -3,9 +3,39 @@
   margin-top: 5rem;
 }
 
+.user-circle {
+  max-width: 20vw;
+  max-height: 40vh;
+  margin: 0 auto;
+}
+.user-btn-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .userP h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .user-circle {
+    margin-top: 1rem;
+    min-width: 50vw;
+  }
+  .user-btn-section {
+    flex-direction: column;
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+}
+
 .userP button {
   background-color: black;
-  border-radius: 15%;
+  border-radius: 15px;
   padding: 1rem;
   font-weight: bold;
   color: white;
@@ -16,4 +46,7 @@
 .userP p {
   margin-top: 5rem;
   font-size: 1.3rem;
+}
+.UserOrderList {
+  width: 100vw;
 }

@@ -52,6 +52,12 @@ const ObjectInfo = () => {
     toast.success("Item added to cart.");
     if (amount === product.stock) setOutOfStock(true);
   };
+
+  const handleFav = () => {
+    ctxDispatch({ type: "ADD_FAV_ITEM", payload: product });
+    toast.success("Item added to Fav!");
+  };
+
   return loading ? (
     <Loader />
   ) : error ? (
@@ -63,6 +69,7 @@ const ObjectInfo = () => {
         <img src={product.img1} />
         <BsCartPlusFill />
         <IoHeartOutline />
+        <button onClick={handleFav}>add to fav</button>
       </div>
 
       <div className="obj-info-bottom-section">

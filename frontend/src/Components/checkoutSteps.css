@@ -2,6 +2,12 @@
   margin-bottom: 3rem;
 }
 
+@media (max-width: 750px) {
+  .checkout-steps {
+    display: none;
+  }
+}
+
 .checkout-steps > * {
   padding: 0.5rem;
   font-size: 1.3rem;

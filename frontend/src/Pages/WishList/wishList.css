@@ -2,8 +2,6 @@
   width: 30vw;
   margin: 0 auto;
   margin-bottom: 4rem;
-  background-color: rgb(239, 237, 237);
-  border-radius: 10%;
   padding: 1rem;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -12,10 +10,16 @@
 .wishList-section {
   margin: 0 auto;
   width: 50vw;
-  margin-top: 30vh;
-  background-color: rgb(239, 237, 237);
-  border-radius: 5%;
+  margin-top: 5rem;
+  background-color: gray;
+  border-radius: 20px;
   padding: 3rem;
+  font-size: 1.2rem;
+}
+
+.wishList-section a {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .wish-list {

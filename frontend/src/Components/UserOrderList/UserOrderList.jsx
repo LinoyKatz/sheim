@@ -5,6 +5,8 @@ import axios from "axios";
 import Msg from "../Msg";
 import { useNavigate } from "react-router-dom";
 
+import "./userOrderList.css";
+
 const UserOrderList = ({ userInfo }) => {
   const navigate = useNavigate();
   const [{ loading, error, orders }, dispatch] = useReducer(reducer, {
@@ -86,6 +88,23 @@ const UserOrderList = ({ userInfo }) => {
                 ))}
               </tbody>
             </table>
+
+            <section className="UserOrderList-mobile">
+              <div className="single-order-list">
+                <ul>
+                  {orders.map((order) => (
+                    <li>id: {order._id}</li>
+                  ))}
+                  {orders.map((order) => (
+                    <li>DATE:{order.createdAt} </li>
+                  ))}
+                  // <li>TOTAL</li>
+                  // <li>PAID</li>
+                  // <li>DELIVERED</li>
+                  // <li>ACTIONS</li>
+                </ul>
+              </div>
+            </section>
           </>
         )}
       </div>

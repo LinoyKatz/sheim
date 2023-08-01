@@ -1,0 +1,40 @@
+.side-nav {
+  padding: 0;
+  background-color: white;
+  align-items: center;
+  z-index: 10;
+  font-size: 1.6rem;
+  /* margin-top: 137px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0rem;
+  display: none;
+  border: 2px solid black;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu-btn {
+  display: none;
+  border-radius: 10px;
+}
+@media (max-width: 750px) {
+  .menu-btn {
+    display: inline-block;
+  }
+}
+
+.side-nav li {
+  background-color: white;
+  border: 0.5px solid black;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+}

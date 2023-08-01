@@ -64,9 +64,12 @@ const SignIn = () => {
         </button>
       </form>
 
-      <p>
-        New costumer?
-        <Link to={`/signup?redirect=${redirect}`}>Create your acount</Link>
+      <p className="new-cstmr-p">
+        New costumer ? <br />
+        <Link to={`/signup?redirect=${redirect}`}>
+          {" "}
+          <span>Create your acount</span>{" "}
+        </Link>
       </p>
     </section>
   );

@@ -28,6 +28,7 @@ import UserProfilePage from "./Pages/UserProfilePage.jsx/UserProfilePage";
 import PaymentPage from "./Pages/PaymentPage/PaymentPage";
 import OrderPage from "./Pages/OrderPage/OrderPage";
 import SearchPage from "./Pages/Serach/SearchPage";
+import SideNav from "./Components/Side-nav/SideNav";
 // import WelcomeSec from "./Components/welcomeSec/WelcomeSec";
 // import SingleObject from "./Components/SingleObject/SingleObject";
 
@@ -38,6 +39,7 @@ function App() {
       {/* <BrowserRouter> */}
       <Header />
       <Space />
+      {/* <SideNav /> */}
       <Routes>
         <Route path="/shopCart" element={<ShopCart />} />
         <Route path="/wishList" element={<WishList />} />

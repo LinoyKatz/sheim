@@ -1,0 +1,21 @@
+.table {
+  width: 100vw;
+}
+.single-order-list {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .table {
+    display: none;
+  }
+
+  .single-order-list {
+    display: block;
+  }
+
+  .single-order-list ul {
+    display: flex;
+    flex-direction: column;
+  }
+}

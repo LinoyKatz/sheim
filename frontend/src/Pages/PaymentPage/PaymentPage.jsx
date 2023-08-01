@@ -6,6 +6,7 @@ import SingleObject from "../../Components/SingleObject/SingleObject";
 import CheckoutSteps from "../../Components/CheckoutSteps";
 import { useNavigate } from "react-router-dom";
 import { Store } from "../../store/store";
+// import { PiPaypalLogoBold } from "react-icons/io";
 
 const PurchasePage = () => {
   const navigate = useNavigate();

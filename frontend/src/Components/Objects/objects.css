@@ -33,11 +33,7 @@
   margin: 0 auto;
   margin-bottom: 3rem;
 } */
-.single-obj-picture {
-  max-width: 15vw;
-  height: 30vh;
-  border-radius: 10%;
-}
+
 /* 
 @media (max-width: 750px) {
   .single-obj-picture {

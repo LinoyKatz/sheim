@@ -19,6 +19,10 @@ const initialState = {
       ? localStorage.getItem("sheim-paymentMethod")
       : "",
   },
+
+  favItems: localStorage.getItem("sheim-fav")
+    ? JSON.parse(localStorage.getItem("sheim-fav"))
+    : [],
 };
 
 export function StoreProvider(props) {

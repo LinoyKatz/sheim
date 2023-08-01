@@ -54,6 +54,13 @@ export const reducer = (state, action) => {
         cart: { cartItems: [], shippingAddress: {} },
       };
 
+    case "USER_UPDATE_REQUEST":
+      return { ...state, loadingUpdate: true };
+    case "USER_UPDATE_SUCCESS":
+      return { ...state, loadingUpdate: false };
+    case "USER_UPDATE_FAIL":
+      return { ...state, loadingUpdate: false };
+
     case "USER_ORDERS_FETCH_REQUEST":
       return { ...state, loading: true };
     case "USER_ORDERS_FETCH_SUCCESS":
@@ -67,6 +74,27 @@ export const reducer = (state, action) => {
       return { ...state, loading: false };
     case "ORDER_CREATE_FAIL":
       return { ...state, loading: false };
+
+    case "ADD_FAV_ITEM":
+      const newFavItem = action.payload;
+      const existingFavItem = state.favItems.find(
+        (item) => item._id === newFavItem._id
+      );
+      const items = existingFavItem
+        ? state.favItems.map((item) =>
+            item._id === existingFavItem._id ? newFavItem : item
+          )
+        : [...state.favItems, newFavItem];
+      localStorage.setItem("sheim-fav", JSON.stringify(items));
+      return { ...state, favItems: [...items] };
+
+    case "REMOVE_FAV_ITEM": {
+      const favs = state.favItems.filter(
+        (item) => item._id !== action.payload._id
+      );
+      localStorage.setItem("sheim-fav", JSON.stringify(favs));
+      return { ...state, favItems: [...favs] };
+    }
 
     default:
       return state;
