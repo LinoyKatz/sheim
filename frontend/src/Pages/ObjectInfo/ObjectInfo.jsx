@@ -68,8 +68,10 @@ const ObjectInfo = () => {
         <p>{product.title}</p>
         <img src={product.img1} />
         <BsCartPlusFill />
-        <IoHeartOutline />
-        <button onClick={handleFav}>add to fav</button>
+
+        <button onClick={handleFav}>
+          <IoHeartOutline />
+        </button>
       </div>
 
       <div className="obj-info-bottom-section">
@@ -77,10 +79,11 @@ const ObjectInfo = () => {
           <mark>NOT IN STOCK</mark>
         ) : (
           <>
-            <h2> price: {product.price}</h2>
-            <h2>total price: {product.price * amount}</h2>
+            <p> price: {product.price}$</p>
+            <p>total price: {product.price * amount}$</p>
             <br />
             <button
+              className="amount-btn"
               disabled={amount === 1}
               onClick={() => setAmount(amount - 1)}
             >
@@ -88,14 +91,19 @@ const ObjectInfo = () => {
             </button>
 
             <button
+              className="amount-btn"
               disabled={amount === product.stock}
               onClick={() => setAmount(amount + 1)}
             >
               +
             </button>
-            <h4>amount: {amount}</h4>
+            <p>amount: {amount}</p>
             <br />
-            <button disabled={outOfStock} onClick={() => handleAddToCart()}>
+            <button
+              className="add-to-cart-btn"
+              disabled={outOfStock}
+              onClick={() => handleAddToCart()}
+            >
               Add to Cart
             </button>
           </>

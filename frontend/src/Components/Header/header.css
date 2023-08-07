@@ -9,6 +9,7 @@
   align-items: center;
   position: fixed;
   height: 20vh;
+  height: 30vh;
   z-index: 2;
   overflow: hidden;
   padding-left: 3rem;
@@ -29,7 +30,7 @@
     margin: 0 auto;
     padding: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
   .head-sec {
@@ -37,6 +38,9 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
+  }
+  .head-mobile-bottom {
+    margin-top: 5rem;
   }
 }
 
@@ -109,7 +113,13 @@ ul {
   margin: 0 auto;
   font-size: 1.3rem;
 }
+.login-iconName {
+  margin-right: 2rem;
+}
 
+.right-head p {
+  font-size: 1.5rem;
+}
 /* @media (max-width: 750px) {
   .header-icon {
     display: none;
@@ -170,3 +180,11 @@ a {
   cursor: pointer;
   font-size: 1.7rem;
 }
+
+.search-bar {
+  background-color: rgb(142, 140, 140);
+}
+
+/* @media (max-width:750px) {
+  
+} */

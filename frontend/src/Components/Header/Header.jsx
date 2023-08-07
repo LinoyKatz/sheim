@@ -9,66 +9,74 @@ import "./header.css";
 import { Store } from "../../store/store";
 import Burger from "../Burger/Burger";
 import SideNav from "../Side-nav/SideNav";
+import SearchAndFilter from "../Search/SearchAndFilter";
 
-const Header = () => {
+const Header = ({ setCategory, setSearchWordy }) => {
   const { state } = useContext(Store);
   const { cart, userInfo } = state;
-
-  const categories = ["Men", "Women", "Kids"];
 
   return (
     <>
       <header className="header-div">
-        <section className="head-sec">
-          <SideNav />
-          <div className="left-head">
-            <ul className="left-list">
-              <li>
-                <VscGlobe className="header-icon" size={35} />
-              </li>
-              <li>
-                {" "}
-                <IoHelpCircle className="header-icon" size={35} />{" "}
-              </li>
-              <Link to="/wishList">
+        <section className="head-mobile-top">
+          <section className="head-sec">
+            <SideNav />
+            <div className="left-head">
+              <ul className="left-list">
+                <li>
+                  <VscGlobe className="header-icon" size={25} />
+                </li>
                 <li>
                   {" "}
-                  <IoHeartOutline className="header-icon" size={35} />{" "}
+                  <IoHelpCircle className="header-icon" size={25} />{" "}
                 </li>
-              </Link>
-              <Link to="/shopCart">
-                <li>
-                  {" "}
-                  <IoBagOutline className="header-icon" size={35} />
-                  {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+                <Link to="/wishList">
+                  <li>
+                    {" "}
+                    <IoHeartOutline className="header-icon" size={25} />{" "}
+                  </li>
+                </Link>
+                <Link to="/shopCart">
+                  <li>
+                    {" "}
+                    <IoBagOutline className="header-icon" size={25} />
+                    {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+                  </li>
+                </Link>
+              </ul>
+            </div>
+            <Link to="/">
+              <div className="logo-head">SHEIM</div>
+            </Link>
+            {/* <div className="right-head">
+            <ul className="right-list">
+              {categories.map((c, index) => (
+                <li key={index} onClick={() => handleCategory(c)}>
+                  {c}
                 </li>
-              </Link>
-              <li className="header-icon">
+              ))}
+            </ul>
+          </div> */}
+            <div className="right-head">
+              <p className="login-iconName">
                 {userInfo ? (
                   <Link to="/profile">{userInfo.name}</Link>
                 ) : (
                   <Link to="/signin">Login</Link>
                 )}
-              </li>
-            </ul>
-          </div>
-          <Link to="/women">
-            <div className="logo-head">SHEIM</div>
-          </Link>
-          <div className="right-head">
-            <ul className="right-list">
-              {categories.map((category, index) => (
-                <li key={index}>
-                  <Link to={`/search?category=${category}`}>{category}</Link>
-                </li>
-              ))}
-            </ul>
+              </p>
+            </div>
+          </section>
+        </section>
+        <section className="head-mobile-bottom">
+          <div className="search-bar">
+            {/* <SerachBAr category={category} setCategory={setCategory} /> */}
+            <SearchAndFilter
+              setCategory={setCategory}
+              setSearchWordy={setSearchWordy}
+            />
           </div>
         </section>
-
-        {/* <section className="search-bar">
-        <input type="text" />
-      </section> */}
       </header>
     </>
   );

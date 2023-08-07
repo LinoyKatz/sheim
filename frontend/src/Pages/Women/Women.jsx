@@ -8,7 +8,7 @@ import IndividualIntervalsExample from "../../Components/Carousel/Carousel";
 // import joinUs from "../../media/app/joinUs";
 import { BiDownvote } from "react-icons/bi";
 import ProductsHeadline from "../../Components/Products-headline/ProductsHeadline";
-const Women = () => {
+const Women = ({ category, searchWord }) => {
   // // Get the button:
   // let mybutton = document.getElementById("myBtn");
 
@@ -32,7 +32,7 @@ const Women = () => {
         <IndividualIntervalsExample />
       </div>
       {/* <ProductsHeadline /> */}
-      <Objects />
+      <Objects category={category} searchWord={searchWord} />
       {/* <button onClick="topFunction()" id="myBtn" title="Go to top">
         Top
       </button> */}

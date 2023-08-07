@@ -1,19 +1,15 @@
 .objectInfo-section {
-  margin: 10vh auto 150px;
-  /* width: 50vw;
-  height: 50vh; */
+  margin: 0 auto;
+  margin-top: 5rem;
   background-color: rgb(239, 237, 237);
-  border-radius: 5%;
-  padding: 5rem;
+  border-radius: 20px;
+  padding: 2rem;
 }
 
 .info {
-  /* height: 20vh; */
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
-  gap: 1rem;
-  /* width: 30vw; */
+  padding: 2rem;
   margin: 0 auto;
   font-size: 1.5rem;
   align-items: center;
@@ -35,12 +31,39 @@
 
 .obj-info-bottom-section {
   margin-top: 2rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.obj-info-bottom-section p {
+  font-size: 1rem;
+}
+
+.amount-btn {
+  width: 1rem;
+  margin: 0.2rem;
+  border-radius: 10px;
+}
+
+.add-to-cart-btn {
+  border-radius: 10px;
+  padding: 0.3rem;
 }
 
 .back-btn {
   background-color: black;
+  border-radius: 10px;
+  margin: 0.5rem;
   padding: 1rem;
   font-weight: bold;
   color: white;
   margin-top: 2rem;
+}
+
+.back-btn:hover {
+  box-shadow: 2px 2px 20px 1px black;
+  cursor: pointer;
 }

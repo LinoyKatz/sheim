@@ -33,11 +33,18 @@ import SideNav from "./Components/Side-nav/SideNav";
 // import SingleObject from "./Components/SingleObject/SingleObject";
 
 function App() {
+  const [category, setCategory] = useState("");
+  const [searchWord, setSearchWordy] = useState("");
+
   return (
     <div className="App">
       <ToastContainer position="bottom-center" limit={1} />
       {/* <BrowserRouter> */}
-      <Header />
+      <Header
+        setCategory={setCategory}
+        category={category}
+        setSearchWordy={setSearchWordy}
+      />
       <Space />
       {/* <SideNav /> */}
       <Routes>
@@ -48,10 +55,13 @@ function App() {
         <Route path="/products/:slug" element={<ObjectInfo />} />
         <Route path="/order/:id" element={<OrderPage />} />
         <Route path="/purchasePage" element={<PurchasePage />} />
-        <Route path="/" element={<Women />} />
+        <Route
+          path="/"
+          element={<Women category={category} searchWord={searchWord} />}
+        />
         <Route path="/search" element={<SearchPage />} />
-        <Route path="/men" element={<Men />} />
-        <Route path="/kids" element={<Kids />} />
+        {/* <Route path="/men" element={<Men />} /> */}
+        {/* <Route path="/kids" element={<Kids />} /> */}
         <Route path="/homeDecor" element={<HomeDecor />} />
         <Route path="/shipping" element={<ShippingPage />} />
         <Route path="/payment" element={<PaymentPage />} />

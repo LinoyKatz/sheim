@@ -84,7 +84,6 @@ const ShopCart = () => {
                     </button>
 
                     <button onClick={() => removeItem(item)}>
-                      {" "}
                       <BiTrash />
                     </button>
                     <br />

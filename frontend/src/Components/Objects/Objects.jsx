@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { BiDownvote } from "react-icons/bi";
@@ -10,12 +10,14 @@ import fake from "../../App";
 // import { productsReducer, reducer } from "../../store/reducers";
 import { reducer } from "../../store/reducers";
 
-const Objects = () => {
+const Objects = ({ category, searchWord }) => {
   const [{ loading, error, products }, dispatch] = useReducer(reducer, {
     loading: true,
     error: "",
     products: [],
   });
+
+  const [productsToShow, setProductsToShow] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -23,6 +25,7 @@ const Objects = () => {
       try {
         const result = await axios.get("/api/products");
         dispatch({ type: "FETCH_SUCCESS", payload: result.data });
+        setProductsToShow(products);
       } catch (error) {
         dispatch({ type: "FETCH_FAIL", payload: error.message });
       }
@@ -30,11 +33,51 @@ const Objects = () => {
     fetchProducts();
   }, []);
 
+  useEffect(() => {
+    if (products && searchWord && searchWord !== "") {
+      setProductsToShow(
+        products.filter((item) =>
+          item.title.toLowerCase().includes(searchWord.toLowerCase())
+        )
+      );
+    }
+
+    if (products && category && category !== "") {
+      if (category === "All") setProductsToShow(products);
+      else {
+        setProductsToShow(
+          products.filter((item) => item.category.includes(category))
+        );
+      }
+    }
+    if (products && category && category !== "" && searchWord) {
+      if (category === "All") setProductsToShow(products);
+      else {
+        setProductsToShow(
+          products.filter(
+            (item) =>
+              item.category.includes(category) &&
+              item.title.toLowerCase().includes(searchWord.toLowerCase())
+          )
+        );
+      }
+    }
+  }, [category, searchWord]);
+
   return (
     <div className="objects-section">
-      {products.map((product) => (
+      {loading && <h1>LOADING...</h1>}
+      {productsToShow && productsToShow.length > 0
+        ? productsToShow.map((product) => (
+            <SingleObject product={product} key={product._id} />
+          ))
+        : products.map((product) => (
+            <SingleObject product={product} key={product._id} />
+          ))}
+
+      {/* {products.map((product) => (
         <SingleObject product={product} key={product._id} />
-      ))}
+      ))} */}
     </div>
   );
 };

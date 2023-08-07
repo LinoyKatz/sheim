@@ -38,7 +38,7 @@ const SignUp = () => {
     }
     if (!validateEmail(email)) {
       setErrorMsg("password");
-      alert(errorMsg);
+      toast.error(errorMsg);
       toast.warning("Please enter a valid email");
       return;
     }

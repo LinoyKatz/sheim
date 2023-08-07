@@ -43,6 +43,7 @@ const EditUserForm = () => {
         ctxDispatch({ type: "USER_SIGNIN", payload: data });
         localStorage.setItem("sheim-userInfo", JSON.stringify(data));
         toast.success("User updated successfully");
+        window.location.reload();
       } catch (err) {
         dispatch({
           type: "FETCH_FAIL",

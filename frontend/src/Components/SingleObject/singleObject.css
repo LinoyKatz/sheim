@@ -12,7 +12,7 @@ a {
   margin: 0 auto;
   margin-bottom: 5rem;
   background-color: rgb(239, 237, 237);
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .single-obj:hover .single-obj-picture {
