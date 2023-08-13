@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 20vh;
   }
   .head-sec {
     display: flex;
@@ -115,8 +116,11 @@ ul {
 }
 .login-iconName {
   margin-right: 2rem;
+  transition: 0.3s;
 }
-
+.login-iconName:hover {
+  transform: scale(1.1);
+}
 .right-head p {
   font-size: 1.5rem;
 }
@@ -142,9 +146,10 @@ ul {
 .head-sec li {
   cursor: pointer;
   font-size: 1.7rem;
+  transition: 0.3s;
 }
 .head-sec li:hover {
-  border-bottom: solid grey;
+  transform: scale(1.3);
 }
 .head-sec a {
   text-decoration: none;
@@ -164,12 +169,14 @@ ul {
 .right-list li {
   cursor: pointer;
   font-size: 1.7rem;
+  transition: 0.3s;
 }
 .right-list a {
   text-decoration: inherit;
+  transition: 0.3s;
 }
 .right-list a:hover {
-  border-bottom: solid grey;
+  transform: scale(1.3);
   color: inherit;
 }
 a {

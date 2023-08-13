@@ -11,6 +11,12 @@ a {
   /* background-color: blueviolet; */
   overflow: hidden;
 }
+
+@media (max-width: 750px) {
+  .hero-div {
+    margin-top: 7vh;
+  }
+}
 .joinUs-star {
   /* לא תופס מקום */
   position: absolute;

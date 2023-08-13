@@ -65,12 +65,18 @@ const ObjectInfo = () => {
   ) : (
     <section className="objectInfo-section">
       <div className="info">
-        <p>{product.title}</p>
-        <img src={product.img1} />
-        <BsCartPlusFill />
-
-        <button onClick={handleFav}>
+        <button className="handle-btn" onClick={handleFav}>
           <IoHeartOutline />
+        </button>
+        <img
+          // onClick="window.open(this.src)"
+          // role="button"
+          // tabIndex="0"
+          src={product.img1}
+        />
+        <button className="handle-btn" onClick={() => handleAddToCart()}>
+          {" "}
+          <BsCartPlusFill />
         </button>
       </div>
 
@@ -79,6 +85,7 @@ const ObjectInfo = () => {
           <mark>NOT IN STOCK</mark>
         ) : (
           <>
+            <p className="product-title">{product.title}</p>
             <p> price: {product.price}$</p>
             <p>total price: {product.price * amount}$</p>
             <br />
@@ -104,7 +111,7 @@ const ObjectInfo = () => {
               disabled={outOfStock}
               onClick={() => handleAddToCart()}
             >
-              Add to Cart
+              Add to Cart +
             </button>
           </>
         )}

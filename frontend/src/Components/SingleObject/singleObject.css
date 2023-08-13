@@ -15,7 +15,7 @@ a {
   border-radius: 10px;
 }
 
-.single-obj:hover .single-obj-picture {
+.single-obj-picture:hover {
   transform: scale(1.1);
 }
 
@@ -60,6 +60,11 @@ a {
   color: white;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  transform: scale(1.1);
 }
 
 .buy-btn:hover {
