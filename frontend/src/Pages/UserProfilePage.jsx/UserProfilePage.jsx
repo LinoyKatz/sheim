@@ -17,7 +17,7 @@ const UserProfilePage = () => {
     if (window.confirm("are you sure you want to sign out?")) {
       ctxDispatch({ type: "USER_SIGNOUT" });
       localStorage.removeItem("sheim-userInfo");
-      localStorage.removeItem("sheim-cartItems");
+      // localStorage.removeItem("sheim-cartItems");
       localStorage.removeItem("sheim-shippingAddress");
 
       navigate("/");
@@ -41,7 +41,11 @@ const UserProfilePage = () => {
           {" "}
           <button>fav list</button>
         </Link>
-        {userInfo.isAdmin && <button>Admin Dashboard</button>}
+        {userInfo.isAdmin && (
+          <Link to="/admin/dashboard">
+            <button>Admin Dashboard</button>
+          </Link>
+        )}
       </section>
 
       {showForm && <EditUserForm />}

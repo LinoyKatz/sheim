@@ -29,6 +29,11 @@ import PaymentPage from "./Pages/PaymentPage/PaymentPage";
 import OrderPage from "./Pages/OrderPage/OrderPage";
 import SearchPage from "./Pages/Serach/SearchPage";
 import SideNav from "./Components/Side-nav/SideNav";
+import AdminDashboard from "./Pages/AdminDashboard/AdminDashboard";
+import AdminRoute from "./Components/AdminRoute";
+import AdminProducts from "./Pages/AdminProducts/AdminProducts";
+import AdminOrders from "./Pages/AdminOrders/AdminOrders";
+import AdminUsers from "./Pages/AdminUsers/AdminUsers";
 // import WelcomeSec from "./Components/welcomeSec/WelcomeSec";
 // import SingleObject from "./Components/SingleObject/SingleObject";
 
@@ -67,6 +72,41 @@ function App() {
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/profile" element={<UserProfilePage />} />
         <Route path="*" element={<Women />} />
+
+        {/* ADMIN ROUTES */}
+        {/* protectedRoutes */}
+        <Route
+          path="/admin/dashboard"
+          element={
+            <AdminRoute>
+              <AdminDashboard />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/products"
+          element={
+            <AdminRoute>
+              <AdminProducts />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/orders"
+          element={
+            <AdminRoute>
+              <AdminOrders />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/users"
+          element={
+            <AdminRoute>
+              <AdminUsers />
+            </AdminRoute>
+          }
+        />
       </Routes>
       {/* <Space /> */}
       <Footer />
