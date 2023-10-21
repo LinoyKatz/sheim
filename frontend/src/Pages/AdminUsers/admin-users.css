@@ -1,0 +1,45 @@
+.admin-products-main {
+  padding-top: 12rem;
+  color: white;
+}
+table {
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  td button {
+    width: 5rem;
+  }
+  .table {
+    border: 0;
+    margin: 0 auto;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .table td {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .table td:last-child {
+    border-bottom: 0;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

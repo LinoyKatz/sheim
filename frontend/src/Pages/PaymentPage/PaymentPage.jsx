@@ -39,13 +39,15 @@ const PurchasePage = () => {
     navigate("/purchasePage");
   };
   const popAlert = () => {
-    toast.warning("You dont have to do that... 💩");
+    toast.warning(
+      "JUST CLICK- 'PAY NOW', (Don't enter your real personal details.)"
+    );
   };
 
   return (
     <>
       <CheckoutSteps step1 step2 step3 />
-      <h3 className="purchase-details-h4">Payment-details:</h3>
+      <h3 className="purchase-details-h3">Payment-details:</h3>
       <div className="purchase-div">
         <section className="purchase-details-left">
           <form className="radio-form" onSubmit={handleSubmit}>

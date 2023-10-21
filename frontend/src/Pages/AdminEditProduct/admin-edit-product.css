@@ -1,0 +1,30 @@
+.edit-product-main {
+  padding-top: 12rem;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  border-radius: 10px;
+  padding: 0.2rem;
+}
+
+button {
+  border-radius: 10px;
+  padding: 0.3rem;
+  width: 10rem;
+  margin: 0 auto;
+  background-color: gray;
+}

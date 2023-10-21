@@ -6,3 +6,22 @@
   margin: 20px;
   width: 200px;
 }
+
+.border {
+  border: solid 4px;
+}
+
+.trans {
+  background-color: salmon;
+}
+
+.sumAllDshbrd {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.border {
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+}

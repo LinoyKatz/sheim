@@ -37,7 +37,7 @@ const WishList = () => {
               <button>
                 <BiTrash size={20} onClick={() => removeFav(item)} />
               </button>
-              <BsCartPlusFill size={20} />
+              {/* <BsCartPlusFill size={20} /> */}
             </li>
           ))}
         </ul>

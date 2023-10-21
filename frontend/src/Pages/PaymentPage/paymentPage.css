@@ -1,3 +1,16 @@
+.purchase-details-h3 {
+  margin: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+/* 
+.purchase-div {
+  width: none;
+} */
+/* .purchase-details-left {
+  width: none;
+} */
+
 .payment-sec {
   background-color: rgb(239, 237, 237);
   border-radius: 15px;
@@ -20,6 +33,12 @@
   width: 10vw;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .radio-box {
+    width: 40vw;
+  }
 }
 
 .payment-sec form button {

@@ -9,10 +9,67 @@
   flex-direction: row;
   justify-content: space-between;
 }
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .purchase-div {
     flex-direction: column;
     gap: 3rem;
+  }
+}
+
+.purchase-page h1 {
+  color: gainsboro;
+  text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+  .big-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.purchase-page h2 {
+  text-decoration: underline;
+}
+
+.whitebordr {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.shipping-div p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.paymentMeth-div p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.CartItems-div p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.sml-img {
+  margin: 1.3rem;
+  border-radius: 10px;
+}
+.CartItems {
+  justify-content: space-between;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.product-details p {
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .CartItems {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -110,4 +167,19 @@
 .bck-to-crt-btn:hover {
   box-shadow: 2px 2px 20px 1px black;
   cursor: pointer;
+}
+.prchs-pge-btn {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.summery p {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.summery {
+  justify-content: center;
+  align-items: center;
 }

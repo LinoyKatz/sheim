@@ -37,8 +37,8 @@ const UserOrderList = ({ userInfo }) => {
   console.log(orders);
 
   return (
-    <div>
-      <div>
+    <div className="main-orderList-div">
+      <div className="main-orderList-div">
         {loading ? (
           <h1>LOADING</h1>
         ) : error ? (
@@ -66,7 +66,7 @@ const UserOrderList = ({ userInfo }) => {
                   <tr key={order._id}>
                     <td>{order._id}</td>
                     <td>{order.createdAt}</td>
-                    <td>{order.totalPrice.toFixed(2)}</td>
+                    <td>{order.totalPrice.toFixed(2)}$</td>
                     <td>
                       {order.isPaid ? order.paidAt.substring(0, 10) : "No"}
                     </td>

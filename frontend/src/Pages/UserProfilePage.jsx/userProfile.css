@@ -13,7 +13,22 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.3rem;
+}
+
+.userP button {
+  background-color: black;
+  border-radius: 15px;
+  padding: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.UserOrderList {
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {
@@ -24,23 +39,19 @@
   }
   .user-circle {
     margin-top: 1rem;
-    min-width: 50vw;
+    min-width: 30vw;
   }
   .user-btn-section {
     flex-direction: column;
-    max-width: 50vw;
+    /* max-width: 20vw; */
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .user-btn-section button {
+    /* width: 20vw; */
+    margin: none;
     margin: 0 auto;
   }
-}
-
-.userP button {
-  background-color: black;
-  border-radius: 15px;
-  padding: 1rem;
-  font-weight: bold;
-  color: white;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .userP p {

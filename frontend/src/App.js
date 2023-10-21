@@ -34,6 +34,8 @@ import AdminRoute from "./Components/AdminRoute";
 import AdminProducts from "./Pages/AdminProducts/AdminProducts";
 import AdminOrders from "./Pages/AdminOrders/AdminOrders";
 import AdminUsers from "./Pages/AdminUsers/AdminUsers";
+import AdminiEditProduct from "./Pages/AdminEditProduct/AdminiEditProduct";
+import AdminiEditUser from "./Pages/AdminiEditUser/AdminiEditUser";
 // import WelcomeSec from "./Components/welcomeSec/WelcomeSec";
 // import SingleObject from "./Components/SingleObject/SingleObject";
 
@@ -104,6 +106,22 @@ function App() {
           element={
             <AdminRoute>
               <AdminUsers />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/product/:id"
+          element={
+            <AdminRoute>
+              <AdminiEditProduct />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/user/:id"
+          element={
+            <AdminRoute>
+              <AdminiEditUser />
             </AdminRoute>
           }
         />

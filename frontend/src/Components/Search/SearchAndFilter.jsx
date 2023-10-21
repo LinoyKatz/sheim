@@ -1,10 +1,12 @@
 import React from "react";
 import "./serach-filter.css";
+import { Link } from "react-router-dom";
 
 const SearchAndFilter = ({ setCategory, setSearchWordy }) => {
   const categories = ["All", "Men", "Women", "Kids"];
   const handleCategory = (title) => {
-    setCategory(title);
+    if (title === "All") setCategory("");
+    else setCategory(title);
   };
   const handleChangeSearch = (word) => {
     setSearchWordy(word);
@@ -21,9 +23,12 @@ const SearchAndFilter = ({ setCategory, setSearchWordy }) => {
       <div className="search-right">
         <ul className="">
           {categories.map((c, index) => (
-            <li key={index} onClick={() => handleCategory(c)}>
-              {c}
-            </li>
+            <Link to={"/"}>
+              {" "}
+              <li key={index} onClick={() => handleCategory(c)}>
+                {c}
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

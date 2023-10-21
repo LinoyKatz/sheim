@@ -14,7 +14,9 @@ const Footer = () => {
   return (
     <div className="footer-div">
       <div className="footer-right">
-        <div className="footer-logo">SHEIM</div>
+        <div className="footer-logo">
+          <p>SHEIM</p>
+        </div>
         <div className="cpyright"> all rights reserved to Linoy Katz</div>
         <div>
           <ul className="footer-contact">

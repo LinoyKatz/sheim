@@ -6,16 +6,51 @@
 }
 
 @media (max-width: 900px) {
-  .table {
+  .main-orderList-div {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  table {
+    border: 0;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 10vw;
+  }
+
+  table thead {
     display: none;
   }
 
-  .single-order-list {
+  table tr {
+    margin-bottom: 10px;
     display: block;
+    border-bottom: 2px solid #ddd;
+    /* width: 10vw; */
   }
 
-  .single-order-list ul {
-    display: flex;
-    flex-direction: column;
+  table td {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    /* float: left; */
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  td button {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    width: 7rem;
   }
 }

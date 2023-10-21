@@ -31,10 +31,12 @@
 
 .address-form button {
   background-color: black;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 1rem;
   font-weight: bold;
   color: white;
+  margin: 0 auto;
+  width: 7rem;
   margin-top: 2rem;
 }
 

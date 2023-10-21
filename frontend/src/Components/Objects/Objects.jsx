@@ -43,8 +43,9 @@ const Objects = ({ category, searchWord }) => {
     }
 
     if (products && category && category !== "") {
-      if (category === "All") setProductsToShow(products);
-      else {
+      if (category === "All") {
+        setProductsToShow(products.filter((item) => item));
+      } else {
         setProductsToShow(
           products.filter((item) => item.category.includes(category))
         );

@@ -79,9 +79,9 @@ const ShopCart = () => {
                       </button>
                     </section>
                     <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
-                    <button>
+                    {/* <button>
                       <IoHeartOutline />
-                    </button>
+                    </button> */}
 
                     <button onClick={() => removeItem(item)}>
                       <BiTrash />

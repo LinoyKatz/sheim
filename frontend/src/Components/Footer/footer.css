@@ -12,6 +12,20 @@
   align-items: center;
 }
 
+@media (max-width: 900px) {
+  .footer-logo p {
+    font-size: 2rem;
+  }
+  .bck-top {
+    width: 4rem;
+  }
+  .cpyright {
+    width: 10rem;
+  }
+  .footer-contact {
+    width: 10rem;
+  }
+}
 .cpyright {
   font-weight: bold;
 }

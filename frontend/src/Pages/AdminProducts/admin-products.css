@@ -1,8 +1,37 @@
 .admin-products-main {
   padding-top: 12rem;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7rem;
+}
+
+.new-prdct-btn {
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: gray;
+  width: 15rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #table-img {
   width: 60px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+/* .tr-products {
+  margin: 1rem;
+} */
+
+.bck-to-dshbrd {
+  margin-top: 3rem;
 }

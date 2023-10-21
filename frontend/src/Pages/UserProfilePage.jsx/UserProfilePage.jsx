@@ -26,6 +26,7 @@ const UserProfilePage = () => {
 
   return (
     <div className="userP">
+      {window.scrollTo(0, 0)}
       <h1>{userInfo.name}</h1>
       <img
         className="user-circle"
@@ -37,14 +38,15 @@ const UserProfilePage = () => {
       <section className="user-btn-section">
         <button onClick={signOutHandler}>sign out</button>
         <button onClick={() => setShowForm(!showForm)}>update user</button>
-        <Link to="/wishList">
-          {" "}
-          <button>fav list</button>
-        </Link>
+
+        <button>
+          <Link to="/wishList">WishList </Link>
+        </button>
+
         {userInfo.isAdmin && (
-          <Link to="/admin/dashboard">
-            <button>Admin Dashboard</button>
-          </Link>
+          <button>
+            <Link to="/admin/dashboard"> Admin dashboard</Link>
+          </button>
         )}
       </section>
 

@@ -69,53 +69,60 @@ const PurchasePage = () => {
     }
   };
   return (
-    <div>
+    <div className="purchase-page">
       <CheckoutSteps step1 step2 step3 step4 />
-      <h1>Preview order</h1>
-      <div className="flex">
-        <div style={{ flex: "5" }}>
-          <div>
+
+      <div className=" big-div">
+        <div className="whitebordr" style={{ flex: "5" }}>
+          <h1>Preview order</h1>
+          <div className="shipping-div">
             <h2>shipping</h2>
             <p>{cart.shippingAddress.fullName}</p>
             <p>
               {cart.shippingAddress.address} ,{cart.shippingAddress.city}
             </p>
-            <p>{cart.shippingAddress.zipcode}</p>
-            <p>
+            <p>Zip Code: {cart.shippingAddress.zipcode}</p>
+            <button className="prchs-pge-btn">
               <Link to="/shipping">EDIT</Link>
-            </p>
+            </button>
           </div>
           <hr />
 
-          <div>
+          <div className="paymentMeth-div">
             <h2>Payment method</h2>
             <p>{cart.paymentMethod}</p>
-            <p>
+            <button className="prchs-pge-btn">
               <Link to="/payment">EDIT</Link>
-            </p>
+            </button>
           </div>
           <hr />
 
-          <div>
-            <h2>CART ITEMS</h2>
+          <div className="CartItems-div">
+            <h2>Cart Items</h2>
 
             {cart.cartItems.map((item) => (
-              <div key={item._id} className="flex center">
-                <img className="sml-img" src={item.img1} alt={item.title} />
-                ||<Link to={`/product/${item.slug}`}> {item.title} </Link>
-                <p> || qty: {item.quantity}</p>
-                <p> || $ {item.price}</p>
-                <p> ||total: $ {item.price * item.quantity}</p>
+              <div key={item._id} className="flex center CartItems">
+                <article className="product-desc">
+                  <img className="sml-img" src={item.img1} alt={item.title} />
+                  ||<Link to={`/product/${item.slug}`}> {item.title} </Link>
+                </article>
+                <div className="product-details">
+                  {" "}
+                  <p> || qty: {item.quantity}</p>
+                  <p> || $ {item.price}</p>
+                  <p> ||total: $ {item.price * item.quantity}</p>
+                  <hr />
+                </div>
               </div>
             ))}
-            <p>
+            <button className="prchs-pge-btn">
               <Link to="/shopCart">EDIT</Link>
-            </p>
+            </button>
           </div>
           <hr />
         </div>
 
-        <div style={{ flex: "2" }} className="col">
+        <div style={{ flex: "2" }} className="col summery">
           <h2>order summery</h2>
           <p> || items: ${cart.itemsPrice?.toFixed(2)}</p>
           <p> || shipping: ${cart.shippingPrice?.toFixed(2)}</p>
@@ -124,6 +131,7 @@ const PurchasePage = () => {
             <mark>|| total: ${cart.totalPrice?.toFixed(2)}</mark>{" "}
           </p>
           <button
+            className="prchs-pge-btn"
             disabled={cart.cartItems.length < 1}
             onClick={handlePlaceOrder}
           >
