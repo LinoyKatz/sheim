@@ -13,20 +13,30 @@ a fullstack MERN, CRUD web application that allows users to shop online.
 -Json.
 -Use of local storage.
 -Login, Sign in, LogOut.
--When signing in- new user is added to Mongo.
+-When signing up- new user is added to Mongo.
+-When placing an order- added to mongo.
 -Able to purchase only if logged in.
 -View your own user details,your previous orders.
+-filter/search bar on homePage.
+-filter buttons-man,women, kids.
+-Responsive css!
+-responsive navigation side-bar.
+-back to top button.
+.
 -Admin's spacial mail and password-
-mail: katzlinoy27@gmail.com
-password: 111.
-(Admin is not able to do spacial things yet-in process.)
--CRUD.
--Adding and removing items from shopping cart.
+mail: katzlinoy20@gmail.com
+password: Abcd5678!
+.
+Admin abilities:
+admin dashboard- can watch al the data. users, orders, products.
+-CRUD- admin can delete,  change and create new products/users. (connected to mongo).
+(regular user can only add/delete items from shoping cart and wishlist)
+
 -Add a single/ multiple selections of same product to shopping cart.
 
 -Can watch your order process on top of screen when purchasing.
 -Shipping adress is saved for a specipic order when navigating between pages.
--Can place a new order.(saved in Mongo).
+-Can place a new order.(saves in Mongo).
 
 
 
@@ -45,6 +55,4 @@ Runs the app in the development mode.\
 Frontend [http://localhost:3000/women].
 Backend: [http://localhost:5000/api/seed] 
 
-## TO DO's :
-Spacial admins CRUD
-favorite items list
+
