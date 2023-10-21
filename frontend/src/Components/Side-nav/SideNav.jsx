@@ -14,48 +14,57 @@ import { RiShirtFill } from "react-icons/ri";
 import { TbShirt } from "react-icons/tb";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const SideNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  const hide = () => setIsOpen(false);
-  const show = () => setIsOpen(true);
+  // const hide = () => setIsOpen(false);
+  // const show = () => setIsOpen(true);
   return (
     <>
-      <button className="menu-btn">
-        <IoMenu size={50} onClick={toggle} />
+      <button className="menu-btn" onClick={toggle}>
+        <IoMenu size={50} />
       </button>
+
       <ul className={`side-nav ${isOpen ? "show" : ""}`}>
-        <li key={SideNav.text}>
+        <li onClick={toggle} key={SideNav.text}>
           <VscChromeClose size={50} />
         </li>
-        <li key={SideNav.text}>
-          Women <GiLargeDress />
+
+        <li key={SideNav.text} onClick={toggle}>
+          <Link to="/Women">Home</Link>
+          <GiLargeDress />
         </li>
-        <li key={SideNav.text}>
+
+        {/* <li key={SideNav.text}>
           Men
           <RiShirtFill />
         </li>
         <li key={SideNav.text}>
           Kids
           <TbShirt />
-        </li>
-        <li key={SideNav.text}>
+        </li> */}
+        {/* <li key={SideNav.text}>
           Language <VscGlobe />
         </li>
         <li key={SideNav.text}>
           Help <IoHelpCircle />
-        </li>
-        <li key={SideNav.text}>
-          Wish-List
+        </li> */}
+
+        <li key={SideNav.text} onClick={toggle}>
+          <Link to="/wishList">WishList</Link>
           <IoHeartOutline />
         </li>
-        <li key={SideNav.text}>
-          Shop-Cart
+
+        <li key={SideNav.text} onClick={toggle}>
+          <Link to="/shopCart">Shop-Cart</Link>
+
           <IoBagOutline />
         </li>
-        <li key={SideNav.text}>
-          My-Profile
+        <li key={SideNav.text} onClick={toggle}>
+          <Link to="/profile">My-Profile</Link>
+
           <BiUserCircle />
         </li>
       </ul>

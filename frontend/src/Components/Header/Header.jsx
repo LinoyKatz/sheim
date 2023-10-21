@@ -23,13 +23,13 @@ const Header = ({ setCategory, setSearchWordy }) => {
             <SideNav />
             <div className="left-head">
               <ul className="left-list">
-                <li>
+                {/* <li>
                   <VscGlobe className="header-icon" size={25} />
                 </li>
                 <li>
                   {" "}
                   <IoHelpCircle className="header-icon" size={25} />{" "}
-                </li>
+                </li> */}
                 <Link to="/wishList">
                   <li>
                     {" "}
